@@ -6,7 +6,7 @@ var controller = require('./controller');
 var app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-app.listen((process.env.PORT || 5000));
+app.listen((process.env.PORT || ["Your Port"]));
 
 // Server index page
 app.get("/", function (req, res) {
@@ -20,7 +20,7 @@ app.get("/webhook", function (req, res) {
     console.log("Verified webhook");
     res.status(200).send(req.query["hub.challenge"]);
   } else {
-    console.error("Verification failed. The tokens do not match.");
+    console.error("Verification failed. Unvalidated Token.");
     res.sendStatus(403);
   }
 });
