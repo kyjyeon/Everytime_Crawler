@@ -1,9 +1,9 @@
 var mysql = require('mysql');
 const db_config = {
-  host: 'us-cdbr-iron-east-02.cleardb.net',
-  user: 'b9ecfdfc1d4928',
-  password: '085c9fc6',
-  database:'heroku_852566e0eb8d56e',
+  host: '',
+  user: '',
+  password: '',
+  database:'',
 };
 
 var db;
