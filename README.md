@@ -1,2 +1,2 @@
 # Everytime_Crawler
-Korean Universities Community platform 'Everytime' postings crawling(facebook chat)
+Kyunghee University Community platform 'Everytime' postings crawling(facebook chat)
